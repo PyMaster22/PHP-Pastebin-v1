@@ -5,7 +5,7 @@ if(!file_exists($paste_file)){
   file_put_contents($paste_file, "<?php header(\"content-type:text/plain\"); if($_GET[\"pasteid\"]==\"0000000000\"){echo \"Pastes.\";}");
 }
 if(!file_exists($list_file)){
-  file_put_contents($list_file, "<!DOCTYPE html><html><body><table><thead><tr><th>Paste link</th></tr></thead><tbody>");
+  file_put_contents($list_file, "<!DOCTYPE html><html><body><table><thead><tr><th>Paste link</th></tr></thead><tbody><tr><th><a href=\"pastes.php?pasteid=0000000000\">0000000000</a></th></tr>");
 }
 function generateRandomString($length = 11) {
   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
